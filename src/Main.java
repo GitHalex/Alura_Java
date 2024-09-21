@@ -26,5 +26,7 @@ public class Main {
         float convertido = (float) ((gradoCelcius * 1.8) + 32);
         System.out.println("Convertido de grados Celsius a Fahrenheit "+ convertido);
 
+
+
     }
 }
