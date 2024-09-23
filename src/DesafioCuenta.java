@@ -29,19 +29,26 @@ public class DesafioCuenta {
             opcion = teclado.nextInt();
             switch (opcion){
                 case 1:
-                    System.out.println("El saldo actualizado es: " + saldo +"$");
+                    System.out.println("El saldo es: " + saldo +"$");
                     break;
                 case 2:
                     System.out.println("¿Cual es el valor que desea retirar?");
                     retirar = teclado.nextFloat();
-                    saldo -= retirar;
-                    System.out.println("El nuevo saldo es: " + saldo +"$");
+                    if (saldo > retirar){
+                        saldo -= retirar;
+                        System.out.println("El nuevo saldo es: " + saldo +"$");
+                    } else {
+                        System.out.println("Saldo insuficiente");
+                    }
                     break;
                 case 3:
                     System.out.println("Ingresa el monto que desea depositar: ");
                     depositar = teclado.nextFloat();
                     saldo += depositar;
                     System.out.println("El nuevo saldo es: " + saldo +"$");
+                    break;
+                case 9:
+                    System.out.println("Saliendo del programa!!!");
                     break;
             }
         }
