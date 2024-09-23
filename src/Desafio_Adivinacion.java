@@ -10,9 +10,9 @@ public class Desafio_Adivinacion {
         System.out.println(randomNumero);
         Scanner teclado = new Scanner(System.in);
         int numero = 0;
+        System.out.println("Ingrese un numero maximo de intentos cinco");
         while (intentos < 5) {
             numero = teclado.nextInt();
-            System.out.println("Ingrese un numero maximo de intentos cinco");
             if (numero > randomNumero) {
                 System.out.println("El numero es menor que ");
             } else if (numero < randomNumero) {
