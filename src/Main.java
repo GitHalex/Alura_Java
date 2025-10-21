@@ -1,7 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        System.out.println("Pelicula: Matrix");
+        System.out.println("Hola perri");
 
         int fechaDeLanzamiento = 1999;
         boolean incluidoEnElPlan = true;
